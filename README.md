@@ -1,21 +1,10 @@
 # Home_Sales
-Module 22 Challenge
-Due Jun 5 by 11:59pm Points 100 Submitting a text entry box or a website url
-In this challenge, you'll use your knowledge of SparkSQL to determine key metrics about home sales data. Then you'll use Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
+![sales_robot](/images/home_sales_robot.jpg)
 
-Before You Begin
-Create a new repository for this project called, Home_Sales. Do not add this homework to an existing repository.
 
-Clone the new repository to your computer.
 
-Push your changes to GitHub.
 
-Files
-Download the following files to help you get started:
-
-Module 22 Challenge filesLinks to an external site.
-
-Instructions
+## Instructions
 Rename the Home_Sales_starter_code.ipynb file as Home_Sales.ipynb.
 
 Import the necessary PySpark SQL functions for this assignment.
@@ -28,11 +17,21 @@ Answer the following questions using SparkSQL:
 
 What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
 
+![4-bedroom-houses](/images/avg_4bdrm.png)
+
 What is the average price of a home for each year it was built that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
+
+![3-bedroom-houses](/images/avg_3bdrm.png)
 
 What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
 
+![neural](/images/avg_2k_sqr_ft.png)
+
 What is the "view" rating for homes costing more than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
+
+![ratings](/images/avg_350k.png)
+
+![time](/images/avg_350k_time.png)
 
 Cache your temporary table home_sales.
 
