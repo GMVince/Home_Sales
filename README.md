@@ -15,40 +15,49 @@ Create a temporary table called home_sales.
 
 Answer the following questions using SparkSQL:
 
-What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
+## What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
 
 ![4-bedroom-houses](/images/avg_4bdrm.png)
 
-What is the average price of a home for each year it was built that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
+## What is the average price of a home for each year it was built that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
 
 ![3-bedroom-houses](/images/avg_3bdrm.png)
 
-What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
+## What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
 
 ![neural](/images/avg_2k_sqr_ft.png)
 
-What is the "view" rating for homes costing more than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
+## What is the "view" rating for homes costing more than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
 
-![ratings](/images/avg_350k.png)
+![ratings](/images/avg_350K.png)
 
 ![time](/images/avg_350k_time.png)
 
-Cache your temporary table home_sales.
+## Cache your temporary table home_sales.
 
-Check if your temporary table is cached.
+## Check if your temporary table is cached.
 
-Using the cached data, run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+## Using the cached data, run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
 
-Partition by the "date_built" field on the formatted parquet home sales data.
+![time](/images/avg_350k_cache.png)
 
-Create a temporary table for the parquet data.
+![time](/images/avg_350k_cache_time.png)
 
-Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+## Partition by the "date_built" field on the formatted parquet home sales data.
 
-Uncache the home_sales temporary table.
+## Create a temporary table for the parquet data.
 
-Verify that the home_sales temporary table is uncached using PySpark.
+## Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
 
+![time](/images/avg_350k_parquet.png)
+
+![time](/images/avg_350k_parquet_time.png)
+
+## Uncache the home_sales temporary table.
+
+## Verify that the home_sales temporary table is uncached using PySpark.
+
+![time](/images/check_cache_status.png)
 
 
 ## References
