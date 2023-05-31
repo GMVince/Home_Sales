@@ -1,5 +1,5 @@
 # Home_Sales
-![sales_robot](/images/home_sales_robot.jpg)
+![sales_robot](/images/home_sales_robot_2.jpg)
 
 
 
